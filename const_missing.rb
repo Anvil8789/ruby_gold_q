@@ -24,9 +24,24 @@ module M
 end
 
 class Bar
+    prepend M
     def self.const_missing(c)
-        include M
         p "class"
     end
 end
 Bar::A
+
+p "Q3"
+# 以下の実行結果を選べ
+# 1.実行時エラー
+# 2．A
+#   実行時エラー
+# 3.A
+#   B
+class Baz
+end
+def Object.const_missing(c)
+    puts c
+end
+Baz::A
+B
