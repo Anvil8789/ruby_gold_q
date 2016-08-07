@@ -30,10 +30,10 @@ Bar.new.hoge
 p "Q2"
 # 以下のコードを実行した結果を選べ
 # 1. hoge!!
-#    super!!
+#    moge!!
 #
-# 2. super!!
-#    super!!
+# 2. hoge!!
+#    実行時エラー「NoMethodError」
 #
 # 3. 実行時エラー「NoMethodError」
 #
